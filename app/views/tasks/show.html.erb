@@ -1,0 +1,11 @@
+<h1>Tasks#show</h1>
+<p>Find me in app/views/tasks/show.html.erb</p>
+<div style="margin: 20px;">
+  <h1><%= @task.name %></h1>
+  <p><strong>Description:</strong> <%= @task.description %></p>
+  <p><strong>Due Date:</strong> <%= @task.due_date %></p>
+  <p><strong>Completed:</strong> <%= @task.completed ? 'Yes' : 'No' %></p>
+
+  <%= link_to 'Edit', edit_task_path(@task) %> |
+  <%= link_to 'Back to tasks', tasks_path %>
+</div>
